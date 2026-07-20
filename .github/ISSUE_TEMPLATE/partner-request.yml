@@ -1,0 +1,64 @@
+name: FindsPilot partner request
+description: Request a fixed-scope evidence, launch, distribution or market-intelligence project.
+title: "Partner request: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for considering FindsPilot. This intake is public. Do not include passwords, payout data, customer data, private contracts or other confidential information. We will arrange a private handoff after the initial fit check.
+  - type: input
+    id: company
+    attributes:
+      label: Company or platform
+      placeholder: Legal or public operating name
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Official domain
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Requested scope
+      options:
+        - Evidence audit — €150
+        - Partner launch sprint — €300
+        - Distribution pack — €450
+        - Market intelligence brief — €600
+        - Affiliate-program application only
+    validations:
+      required: true
+  - type: input
+    id: markets
+    attributes:
+      label: Target countries
+      placeholder: Germany, France, Poland
+    validations:
+      required: true
+  - type: input
+    id: terms
+    attributes:
+      label: Current public commercial or affiliate terms URL
+      placeholder: https://example.com/affiliate-terms
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome and deadline
+      description: Keep this non-confidential. Do not paste private terms or credentials.
+      placeholder: What needs to ship, and by when?
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Commercial boundaries
+      options:
+        - label: I understand the project fee covers deliverables, not guaranteed traffic, ranking, sales or revenue.
+          required: true
+        - label: I understand sponsorship cannot change editorial evidence or safety notes.
+          required: true
