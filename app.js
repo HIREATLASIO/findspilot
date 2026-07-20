@@ -8,6 +8,21 @@ const agents = [
 const launchData = agents.map((agent, index) => ({ ...agent, order: String(index + 1).padStart(2, "0") }));
 const stateKey = "findspilot:pages-launch:v1";
 const $ = (selector) => document.querySelector(selector);
+const partnerPitch = `Subject: EU launch sprint for [AGENT NAME]
+
+Hello [AGENT NAME] partnerships team,
+
+FindsPilot is an independent shopping-agent comparison and link-conversion platform for EU buyers. We are opening five founding partner sprints at €300 each.
+
+The fixed scope includes a verified evidence profile, a fresh registration-link integration, 12 original hooks, six channel-ready creative briefs, a UTM map and a launch snapshot. Affiliate commission, if approved, stays separate and disclosed. Sponsorship cannot buy ranking or remove safety notes, and we do not guarantee traffic or sales.
+
+Public launch page: https://hireatlasio.github.io/findspilot/#partners
+Structured intake: https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml
+
+Please send your current public program terms and the right commercial contact if this fits.
+
+Regards,
+FindsPilot`;
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[char]);
@@ -89,6 +104,11 @@ async function copyText(value) {
 $("#copy-packet").addEventListener("click", async () => {
   await copyText($("#packet-text").textContent);
   toast("Activation packet copied");
+});
+
+$("#copy-pitch").addEventListener("click", async () => {
+  await copyText(partnerPitch);
+  toast("€300 partner pitch copied");
 });
 
 renderAgents();
