@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hireatlasio.github.io/findspilot/sitemap.xml
