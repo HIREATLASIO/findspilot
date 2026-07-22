@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#101815">
+  <title>FindsPilot Launch OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="setup.css">
+</head>
+<body class="ops-body">
+  <a class="skip" href="#ops-main">Skip to command center</a>
+  <header class="ops-header">
+    <a class="brand" href="./"><span>FP</span><strong>FindsPilot</strong></a>
+    <span>OWNER / LAUNCH OS</span>
+    <nav><a href="./">Public site</a><a href="https://findspilot.vercel.app/dashboard" target="_blank" rel="noreferrer">Full dashboard ↗</a></nav>
+  </header>
+
+  <main id="ops-main" class="ops-main">
+    <section class="ops-hero">
+      <div>
+        <p class="eyebrow">ZERO-COST REVENUE COMMAND</p>
+        <h1>From live<br>to <em>monetized.</em></h1>
+        <p>One phone. Four commercial routes. No random tools, no fake automation and no secret credentials in chat.</p>
+      </div>
+      <aside class="readiness-card">
+        <span>REVENUE READINESS</span>
+        <strong id="readiness-score">0%</strong>
+        <div><i id="readiness-bar"></i></div>
+        <p id="readiness-state">Complete the critical path below.</p>
+      </aside>
+    </section>
+
+    <section class="ops-alert">
+      <div><b>LIVE</b><span>GitHub continuity site</span></div>
+      <div><b>LIVE</b><span>Vercel full catalog</span></div>
+      <div><b class="warn">0</b><span>commission routes</span></div>
+      <div><b class="warn">LOCKED</b><span>direct checkout</span></div>
+    </section>
+
+    <section class="ops-section" id="critical">
+      <header><span>01 / CRITICAL PATH</span><h2>Unlock money<br>in the right order.</h2><p>These are the only blockers between “website live” and a real payment or attributable commission.</p></header>
+      <div class="mission-grid" id="critical-grid"></div>
+    </section>
+
+    <section class="ops-section dark" id="signups">
+      <header><span>02 / ONLY THESE SIGNUPS</span><h2>Popular, useful,<br>and enough.</h2><p>One legitimate owner-controlled account per company or platform. Do not build an account farm.</p></header>
+      <div class="signup-groups" id="signup-groups"></div>
+      <aside class="do-not-box"><strong>DO NOT SIGN UP YET</strong><p>Random low-demand agents · paid schedulers · paid video APIs · extra AI personas · broad affiliate networks · engagement bots · proxy farms.</p></aside>
+    </section>
+
+    <section class="ops-section math-section" id="math">
+      <header><span>03 / TRUTHFUL REVENUE MATH</span><h2>Know the volume<br>before the hype.</h2><p>Applications and clicks are not revenue. Count settled service payments and delivered-parcel commissions only.</p></header>
+      <div class="math-grid">
+        <form class="math-card" id="affiliate-math">
+          <span>AFFILIATE COMMISSION</span>
+          <label>Average shipping fee (€)<input id="shipping-fee" type="number" min="1" max="500" step="1" value="40"></label>
+          <label>Commission rate (%)<input id="commission-rate" type="number" min="0.1" max="30" step="0.1" value="5"></label>
+          <label>Delivered parcels / month<input id="parcel-count" type="number" min="0" max="100000" step="1" value="100"></label>
+          <output><small>MONTHLY COMMISSION</small><strong id="affiliate-result">€200</strong><p id="affiliate-target">750 delivered parcels for €1,500.</p></output>
+        </form>
+        <form class="math-card accent" id="service-math">
+          <span>FIXED-SCOPE SERVICES</span>
+          <label>Selected offer<select id="service-price"><option value="150">Evidence audit — €150</option><option value="300" selected>Partner sprint — €300</option><option value="450">Distribution pack — €450</option><option value="600">Market brief — €600</option></select></label>
+          <label>Closed projects<input id="service-count" type="number" min="0" max="100" step="1" value="5"></label>
+          <output><small>BOOKED REVENUE</small><strong id="service-result">€1,500</strong><p>Before payment fees, delivery costs and tax. A target—not a forecast.</p></output>
+          <a href="./#partners">Open the public offer ↗</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="ops-section dark" id="content">
+      <header><span>04 / CONTENT ENGINE</span><h2>Generate the brief.<br>Keep the posting human.</h2><p>Create original, disclosed scripts fast. Use native scheduling and manual review; never automate spam, fake engagement or undisclosed AI.</p></header>
+      <div class="content-builder">
+        <form id="content-form">
+          <label>Channel<select id="content-channel"><option>TikTok</option><option>Instagram Reel</option><option>YouTube Short</option><option>X post</option><option>Reddit value post</option></select></label>
+          <label>Angle<select id="content-angle"><option value="fee">Fee truth</option><option value="tutorial">How to buy</option><option value="compare">Agent comparison</option><option value="risk">Risk screen</option><option value="tool">Converter demo</option></select></label>
+          <label>Agent<select id="content-agent"><option>Superbuy</option><option>JoyaGoo</option><option>AllChinaBuy</option><option>KakoBuy</option><option>Multiple agents</option></select></label>
+          <button type="submit">Generate an original brief</button>
+        </form>
+        <div class="content-output"><span>PRODUCTION BRIEF</span><pre id="content-result">Choose a channel and angle, then generate.</pre><button id="copy-content" type="button">Copy brief</button></div>
+      </div>
+    </section>
+
+    <section class="ops-section" id="handoff">
+      <header><span>05 / CODEX HANDOFF</span><h2>Send evidence,<br>never access.</h2><p>When a company approves you, return this packet. I will validate the destination, install the route, redeploy, test and update the ledger.</p></header>
+      <div class="handoff-box">
+        <pre id="ops-packet">PROGRAM:
+ACCOUNT EMAIL: [email only]
+APPROVAL STATUS: pending / approved
+FRESH SHARE OR SIGNUP URL:
+CURRENT TERMS URL:
+RATE + EXACT QUALIFYING EVENT:
+ATTRIBUTION METHOD / WINDOW:
+HOLD / REVERSAL / CLAIM EXPIRY:
+PAYOUT METHOD + MINIMUM:
+PERMITTED TRAFFIC:
+PRODUCT DEEP LINKS: yes / no
+NOTES: [no passwords, OTPs, ID or bank data]</pre>
+        <button id="copy-ops-packet" type="button">Copy activation packet</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ops-footer"><span>FindsPilot Launch OS</span><p>Progress and non-sensitive setup notes stay in this browser only.</p><a href="./">Return to public site ↗</a></footer>
+  <div class="toast" id="ops-toast" role="status" aria-live="polite"></div>
+  <script src="setup.js"></script>
+</body>
+</html>

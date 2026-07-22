@@ -111,5 +111,38 @@ $("#copy-pitch").addEventListener("click", async () => {
   toast("€300 partner pitch copied");
 });
 
+const intakeEndpoint = "https://acychihnodkzwngboinf.supabase.co/functions/v1/findspilot-partner-intake";
+const partnerForm = $("#partner-form");
+partnerForm.elements.startedAt.value = String(Date.now());
+document.querySelectorAll("[data-scope]").forEach((link) => link.addEventListener("click", () => {
+  partnerForm.elements.requestedScope.value = link.dataset.scope;
+}));
+partnerForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const submit = partnerForm.querySelector("button[type=submit]");
+  const status = $("#partner-form-status");
+  submit.disabled = true;
+  status.className = "";
+  status.textContent = "Submitting securely…";
+  const data = new FormData(partnerForm);
+  const payload = Object.fromEntries(data.entries());
+  payload.consent = data.get("consent") === "on";
+  payload.startedAt = Number(payload.startedAt);
+  try {
+    const response = await fetch(intakeEndpoint, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload) });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || "The request could not be submitted.");
+    status.className = "success";
+    status.textContent = result.message || "Request received.";
+    partnerForm.reset();
+    partnerForm.elements.startedAt.value = String(Date.now());
+  } catch (error) {
+    status.className = "error";
+    status.textContent = error instanceof Error ? error.message : "The request could not be submitted.";
+  } finally {
+    submit.disabled = false;
+  }
+});
+
 renderAgents();
 renderLaunch();

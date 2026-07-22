@@ -17,13 +17,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="intake.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"FindsPilot","url":"https://hireatlasio.github.io/findspilot/","description":"Independent China-shopping agent comparison, link converter and evidence-led buying guide."}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="FindsPilot home"><span>FP</span><strong>FindsPilot</strong></a>
-    <nav aria-label="Main navigation"><a href="#converter">Converter</a><a href="#agents">Agents</a><a href="#partners">Partners</a><a href="#launch">Start now</a><a href="https://findspilot.vercel.app/products" target="_blank" rel="noreferrer">Full app ↗</a></nav>
+    <nav aria-label="Main navigation"><a href="#converter">Converter</a><a href="#agents">Agents</a><a href="#partners">Partners</a><a href="setup.html">Launch OS</a><a href="https://findspilot.vercel.app/products" target="_blank" rel="noreferrer">Full app ↗</a></nav>
     <a class="header-cta" href="#converter">Convert a link <span>↗</span></a>
   </header>
 
@@ -80,13 +81,37 @@
     <section class="partners section" id="partners">
       <div class="partner-hero">
         <div><p class="eyebrow">FOR SHOPPING-AGENT TEAMS</p><h2>Turn current terms into<br>a launchable acquisition asset.</h2><p>Fixed-scope research, clean route integration, original creative briefs and transparent reporting. Sponsorship never changes editorial evidence or safety notes.</p></div>
-        <div class="partner-actions"><a class="primary light" href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">Request a founding slot <span>↗</span></a><button id="copy-pitch" type="button">Copy the €300 pitch</button></div>
+        <div class="partner-actions"><a class="primary light" href="#partner-intake" data-scope="partner-launch-sprint">Request a founding slot <span>↗</span></a><button id="copy-pitch" type="button">Copy the €300 pitch</button></div>
       </div>
       <div class="offer-grid">
-        <article><span>EVIDENCE AUDIT</span><strong>€150</strong><p>Current terms, route test and disclosed profile update.</p><small>No paid ranking or guaranteed traffic.</small><a href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">Request scope ↗</a></article>
-        <article class="featured"><i>FOUNDING OFFER</i><span>PARTNER LAUNCH SPRINT</span><strong>€300</strong><p>Verified integration, 12 hooks, six briefs, UTM map and launch snapshot.</p><small>Affiliate commission remains separate.</small><a href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">Request scope ↗</a></article>
-        <article><span>DISTRIBUTION PACK</span><strong>€450</strong><p>Launch sprint plus five production-ready channel assets.</p><small>Publication and performance are not guaranteed.</small><a href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">Request scope ↗</a></article>
-        <article><span>MARKET INTELLIGENCE</span><strong>€600</strong><p>Custom category, pricing, route and catalog decision brief.</p><small>Original analysis only.</small><a href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">Request scope ↗</a></article>
+        <article><span>EVIDENCE AUDIT</span><strong>€150</strong><p>Current terms, route test and disclosed profile update.</p><small>No paid ranking or guaranteed traffic.</small><a href="#partner-intake" data-scope="evidence-audit">Request scope ↗</a></article>
+        <article class="featured"><i>FOUNDING OFFER</i><span>PARTNER LAUNCH SPRINT</span><strong>€300</strong><p>Verified integration, 12 hooks, six briefs, UTM map and launch snapshot.</p><small>Affiliate commission remains separate.</small><a href="#partner-intake" data-scope="partner-launch-sprint">Request scope ↗</a></article>
+        <article><span>DISTRIBUTION PACK</span><strong>€450</strong><p>Launch sprint plus five production-ready channel assets.</p><small>Publication and performance are not guaranteed.</small><a href="#partner-intake" data-scope="distribution-pack">Request scope ↗</a></article>
+        <article><span>MARKET INTELLIGENCE</span><strong>€600</strong><p>Custom category, pricing, route and catalog decision brief.</p><small>Original analysis only.</small><a href="#partner-intake" data-scope="market-intelligence-brief">Request scope ↗</a></article>
+      </div>
+    </section>
+
+    <section class="partner-intake section" id="partner-intake">
+      <div class="section-heading"><p class="eyebrow">PRIVATE PARTNER INTAKE</p><h2>One form.<br>A real next step.</h2><p>Submit only public business information. We review fit first, then arrange a private handoff for contracts, billing and approved assets.</p></div>
+      <div class="intake-shell">
+        <aside><span>WHAT HAPPENS NEXT</span><ol><li><b>01</b>Fit and evidence review</li><li><b>02</b>Private commercial handoff</li><li><b>03</b>Written scope and invoice</li><li><b>04</b>Production after payment</li></ol><p>No guaranteed ranking, traffic, sales or commission. Never submit credentials, customer data, private contracts or payout information.</p></aside>
+        <form id="partner-form">
+          <div class="form-grid">
+            <label>Contact name<input name="contactName" required minlength="2" maxlength="100" autocomplete="name"></label>
+            <label>Work email<input name="workEmail" type="email" required maxlength="254" autocomplete="email"></label>
+            <label>Company or platform<input name="company" required minlength="2" maxlength="140" autocomplete="organization"></label>
+            <label>Official domain<input name="officialDomain" type="url" required maxlength="500" placeholder="https://example.com" autocomplete="url"></label>
+            <label>Requested scope<select name="requestedScope" required><option value="partner-launch-sprint">Partner launch sprint — €300</option><option value="evidence-audit">Evidence audit — €150</option><option value="distribution-pack">Distribution pack — €450</option><option value="market-intelligence-brief">Market intelligence brief — €600</option><option value="affiliate-program">Affiliate-program integration</option></select></label>
+            <label>Target countries<input name="targetCountries" required minlength="2" maxlength="240" placeholder="Germany, France, Poland"></label>
+            <label class="wide">Current public terms URL <small>Optional</small><input name="publicTermsUrl" type="url" maxlength="500" placeholder="https://example.com/affiliate-terms"></label>
+            <label class="wide">Desired outcome and deadline<textarea name="desiredOutcome" required minlength="20" maxlength="2000" placeholder="What needs to ship, and by when?"></textarea></label>
+          </div>
+          <label class="honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+          <input name="startedAt" type="hidden">
+          <label class="consent"><input name="consent" type="checkbox" required><span>I consent to FindsPilot using this information to assess and reply to this request. I understand the intake is retained for up to 180 days and is not a purchase or performance guarantee.</span></label>
+          <div class="form-submit"><button type="submit">Submit private request <span>↗</span></button><p id="partner-form-status" role="status" aria-live="polite">No account required.</p></div>
+          <small class="form-fallback">Form unavailable? Use the <a href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">public fallback intake</a> without confidential information.</small>
+        </form>
       </div>
     </section>
 
@@ -114,11 +139,11 @@ SCREENSHOT NOTES: [no identity or bank data]</pre>
       <article><span>01</span><h3>Affiliate disclosure</h3><p>FindsPilot may earn commission from clearly labeled links after a program approves a fresh commercial route. The links on this fallback page are neutral official links and currently generate no commission.</p></article>
       <article><span>02</span><h3>Independent comparison</h3><p>Payment cannot buy rankings, remove safety notes or change evidence. Rates and program rules can change; verify them before acting.</p></article>
       <article><span>03</span><h3>Shopping risk</h3><p>FindsPilot is not the seller, agent, carrier or customs authority. Buyers are responsible for legality, duties, product authenticity and final checkout decisions.</p></article>
-      <article><span>04</span><h3>Privacy</h3><p>This static fallback has no account system, tracking pixel or form database. Checklist state stays in your browser. Email requests are sent through your chosen email provider.</p></article>
+      <article><span>04</span><h3>Privacy</h3><p>No account or tracking pixel is used. Partner requests are stored privately in an EU-region database with a 180-day deletion marker. Owner checklist state stays in your browser.</p></article>
     </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#top"><span>FP</span><strong>FindsPilot</strong></a><p>Independent China-shopping navigation. Evidence first.</p><div><a href="#legal">Disclosure</a><a href="https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml" target="_blank" rel="noreferrer">Partner intake</a><a href="https://findspilot.vercel.app/products" target="_blank" rel="noreferrer">Full app</a><a href="https://agentlinks.de/en" rel="noreferrer">Legacy site</a></div><small>© 2026 FindsPilot · Static zero-cost continuity deployment</small></footer>
+  <footer class="site-footer"><a class="brand" href="#top"><span>FP</span><strong>FindsPilot</strong></a><p>Independent China-shopping navigation. Evidence first.</p><div><a href="#legal">Disclosure</a><a href="setup.html">Owner Launch OS</a><a href="#partner-intake">Private partner intake</a><a href="https://findspilot.vercel.app/products" target="_blank" rel="noreferrer">Full app</a><a href="https://agentlinks.de/en" rel="noreferrer">Legacy site</a></div><small>© 2026 FindsPilot · Static zero-cost continuity deployment</small></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="app.js"></script>
 </body>

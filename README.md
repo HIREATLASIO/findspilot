@@ -11,6 +11,7 @@ FindsPilot is an independent China-shopping agent comparison, marketplace-link c
 - A structured public partner-intake form
 - Affiliate, editorial, shopping-risk and privacy disclosures
 - A phone-persistent owner launch checklist
+- A separate mobile Launch OS with revenue readiness, controlled signups, truthful commission math, service-sales math and original content briefs
 
 ## Commercial status
 
