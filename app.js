@@ -17,7 +17,7 @@ FindsPilot is an independent shopping-agent comparison and link-conversion platf
 The fixed scope includes a verified evidence profile, a fresh registration-link integration, 12 original hooks, six channel-ready creative briefs, a UTM map and a launch snapshot. Affiliate commission, if approved, stays separate and disclosed. Sponsorship cannot buy ranking or remove safety notes, and we do not guarantee traffic or sales.
 
 Public launch page: https://hireatlasio.github.io/findspilot/#partners
-Structured intake: https://github.com/HIREATLASIO/findspilot/issues/new?template=partner-request.yml
+Private intake: https://hireatlasio.github.io/findspilot/#partner-intake
 
 Please send your current public program terms and the right commercial contact if this fits.
 

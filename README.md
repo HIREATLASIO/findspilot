@@ -8,7 +8,7 @@ FindsPilot is an independent China-shopping agent comparison, marketplace-link c
 - Client-side Taobao, Weidian, 1688 and Tmall link validation
 - An indicative shipping-range calculator
 - Fixed-scope partner offers from €150 to €600
-- A structured public partner-intake form
+- A structured private partner-intake form backed by a locked-down EU-region database
 - Affiliate, editorial, shopping-risk and privacy disclosures
 - A phone-persistent owner launch checklist
 - A separate mobile Launch OS with revenue readiness, controlled signups, truthful commission math, service-sales math and original content briefs
